@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./DLUC.css">
+    <title>登录</title>
+</head>
+<body>
+    <div class="login-container">
+        <h2>登录</h2>
+        <div class="form-input">
+            <input type="zhanghao" id="zhanghao" placeholder="账号：123456">
+            <input type="password" id="password" placeholder="密码：123456">
+        </div>
+        <input  class="CON" type="submit" value="确定" onclick="checkPassword()">
+        <span>没有账号？<a href="#">去注册</a></span>
+    </div>
+    <script>
+        alert("在上次做的登录页面的基础上更改了一下样式，加入了一些网上看到的小东西")
+        function checkPassword() {
+            var password = document.getElementById("password").value;
+            var zhanghao = document.getElementById("zhanghao").value;
+            if(zhanghao == "123456"&&password == "123456") {
+                alert("密码正确");
+                window.location.href = "./main.html";
+            } 
+            else if(zhanghao!="" && password == ""){
+                alert("密码不能为空");
+            }
+            else if(zhanghao == ""){
+                    alert("账号不能为空");
+                }
+            else if(password == "123456" && zhanghao != "123456"){
+                alert("账号不存在");
+            }
+            else if(password != "123456" && zhanghao == "123456"){
+                alert("密码错误");
+            }
+            else {
+                alert("账号错误");
+            }
+            
+        }
+    </script>
+</body>
+</html>

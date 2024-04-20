@@ -1,0 +1,72 @@
+@charset "utf-8";
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('./image/inset_bar.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+}
+.login-container {
+    background-color: rgba(255, 255, 255, 0.3); 
+    padding: 40px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    width: 400px;
+}
+.login-container h2{
+    text-align: center;
+}
+.form-input {
+    margin-bottom: 20px;
+}
+.CON{
+    width: 280px;
+    height: 55px;
+    margin: 35px auto 40px auto;
+    border: none;
+    background: linear-gradient(-200deg,rgb(255, 115, 0),rgba(255, 162, 0, 0.93));
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 8px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.CON:hover{
+    background: linear-gradient(-200deg,rgba(255, 162, 0, 0.93),rgb(255, 115, 0));
+    background-position-x: -400px;
+}
+
+input[type="password"], input[type="submit"],input[type="zhanghao"] {
+    width: 91%;
+    padding: 15px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+input[type="submit"]{
+    width: 100%;
+    padding: 15px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+.login-container span{
+    font-size: 14px;
+}
+.login-container a{
+    color: orange;
+    text-decoration: none;
+}
